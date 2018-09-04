@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/numad.css">
+  <script src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
+
+</head>
+<div class="foto-encima">
+  <img src="/assets/Mun-foto.jpg" alt="Logo mun" style="max-height: 122px;
+  width: 100%;
+  margin-bottom: -4px;
+}">
+
+</div>
+<section class="navigation">
+  <div class="nav-container">
+    <!-- <div class="brand" style="height: 70px;
+    width: 70px;">
+      <img src="/assets/logo-mun-0e600c6509cd8bf45c726f75f32eedfcda1b9a7a273d5c4089fab58240abe5c7.jpg" alt="Logo mun" style="
+    height: 70px;
+    width: 70px;
+">
+
+</div> -->
+<div class="brand" style="text-decoration: none;">
+  <a href="numad.html">MUNUCCLE</a>
+</div>
+<nav>
+  <div class="nav-mobile"><a id="nav-toggle" href="#!"><span></span></a></div>
+  <ul class="nav-list">
+    <li>
+      <a href="#!">Munuccle 2018</a>
+      <ul class="nav-dropdown">
+        <li>
+          <a href="home3.html">Un MUN?</a>
+        </li>
+        <li>
+          <a href="pourquoi.html">Pourquoi munuccle?</a>
+        </li>
+        <li>
+          <a href="but.html">But du jeu</a>
+        </li>
+        <li>
+          <a href="#!">Agenda</a>
+        </li>
+      </ul>
+    </li>
+    <li>
+      <a href="#!">Comités</a>
+      <ul class="nav-dropdown">
+        <li>
+          <a href="home2.html">Themes et rapports</a>
+        </li>
+        <li>
+          <a href="#!">Délégations</a>
+        </li>
+        <li>
+          <a href="#!">TPG</a>
+        </li>
+      </ul>
+    </li>
+    <li>
+      <a href="#!">Se préparer</a>
+      <ul class="nav-dropdown">
+        <li>
+          <a href="rolede.html">Rôle délégué</a>
+        </li>
+        <li>
+          <a href="rediger.html">Rediger TPG</a>
+        </li>
+        <li>
+          <a href="projet-resolution.html">Projet de resolution</a>
+        </li>
+        <li>
+          <a href="debats.html">Debats functionement</a>
+        </li>
+
+      </ul>
+    </li>
+    <li>
+      <a href="#!">Équipe</a>
+
+    </li>
+
+  </ul>
+</nav>
+</div>
+</section>
+<body>
+  <div class="container">
+
+
+     <p><h1>Un MUN</h1></p>
+       <p><h2>(Model United Nations ou Modélisation des Nations Unies)</h2></p>
+      <h3><p>Qu’est-ce que c’est ?Un MUN est une simulation, un jeu de rôle : les délégué.e.s qui participent à ces modélisationsdes Nations Unies vont, pendant toute la durée de l’événement, faire « comme si » ils/elles étaient le/la délégué.e de tel pays, venu.e débattre sur tel thème, dans telle commission, pour enfin se retrouver en Assemblée générale et voter des résolutions qui auront force de loi... internationale. Chaque MUN a son organigramme, son organisation propre, mais toutes s’inspirent des commissions qu’on trouve au sein de l’ONU, des principaux thèmes qui y sont traités d’année en année, mais surtout de l’actualité qui nourrit les débats au sein de ces forums du multilatéralisme.</p>
+      <p>Elle se déroule généralement en quatre temps:</p><li>Lacérémonie d’ouverture, qui donne le ton et la solennité nécessaire à l’événement ;</li><li>Les débats au sein des différentes commissions au cours desquels les délégués adoptent des résolutions qui répondent aux enjeux de chacun des thèmes débattus</li><li>L’Assemblée générale qui rassemble toutes les délégations et constitue l’occasion pour la communauté internationale de solennellement valider les mesures proposées au sein des commissions</li> <li>La cérémonie de clôture enfin, occasion pour toute l’équipe d’organisation de donner à voir son travail, son savoir-faire et son endurance, gages de la réussite d’un événement d’une grande complexité</li>
+      <p>Mais un MUN c’est aussi tout ce qui se passe en amont justement, le travail des élèves-organisateurs qui sont à l’initiative et démontrent qu’ils peuvent avantageusement faire aussi bien si ce n’est mieux que les adultes ; celui des président.e.s aussi, dont les rapports guident les délégués dans leur préparation ; celui de ces derniers qui, dans leurs établissements respectifs, se familiarisentavec le pays qu’ils/elles incarnent, ses intérêts, ses traditions diplomatiques et ses traits culturels, et arrivent le jour J en habitant totalement leur rôle. </p>
+      <li>Site de l’ONU : <a href="http://www.un.org/fr/">http://www.un.org/fr/</a></li></h3>
+    </div>
+  </body>
+  <script>
+  (function($) { // Begin jQuery
+  $(function() { // DOM ready
+    // If a link has a dropdown, add sub menu toggle.
+    $('nav ul li a:not(:only-child)').click(function(e) {
+      $(this).siblings('.nav-dropdown').toggle();
+      // Close one dropdown when selecting another
+      $('.nav-dropdown').not($(this).siblings()).hide();
+      e.stopPropagation();
+    });
+    // Clicking away from dropdown will remove the dropdown class
+    $('html').click(function() {
+      $('.nav-dropdown').hide();
+    });
+    // Toggle open and close nav styles on click
+    $('#nav-toggle').click(function() {
+      $('nav ul').slideToggle();
+    });
+    // Hamburger to X toggle
+    $('#nav-toggle').on('click', function() {
+      this.classList.toggle('active');
+    });
+  }); // end DOM ready
+})(jQuery); // end jQuery
+</script>
+
+</html>
+

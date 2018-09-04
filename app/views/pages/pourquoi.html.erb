@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/numad.css">
+  <script src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
+
+</head>
+<div class="foto-encima">
+  <img src="/assets/Mun-foto.jpg" alt="Logo mun" style="max-height: 122px;
+  width: 100%;
+  margin-bottom: -4px;
+}">
+
+</div>
+<section class="navigation">
+  <div class="nav-container">
+    <!-- <div class="brand" style="height: 70px;
+    width: 70px;">
+      <img src="/assets/logo-mun-0e600c6509cd8bf45c726f75f32eedfcda1b9a7a273d5c4089fab58240abe5c7.jpg" alt="Logo mun" style="
+    height: 70px;
+    width: 70px;
+">
+      <a href="#!">MUNUCCLE</a>
+
+    </div> -->
+    <div class="brand" style="text-decoration: none;">
+      <a href="numad.html">MUNUCCLE</a>
+    </div>
+    <nav>
+      <div class="nav-mobile"><a id="nav-toggle" href="#!"><span></span></a></div>
+      <ul class="nav-list">
+        <li>
+          <a href="#!">Munuccle 2018</a>
+          <ul class="nav-dropdown">
+            <li>
+              <a href="home3.html">Un MUN?</a>
+            </li>
+            <li>
+              <a href="pourquoi.html">Pourquoi munuccle?</a>
+            </li>
+            <li>
+              <a href="but.html">But du jeu</a>
+            </li>
+            <li>
+              <a href="#!">Agenda</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href="#!">Comités</a>
+          <ul class="nav-dropdown">
+            <li>
+              <a href="home2.html">Themes et rapports</a>
+            </li>
+            <li>
+              <a href="#!">Délégations</a>
+            </li>
+            <li>
+              <a href="#!">TPG</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href="#!">Se préparer</a>
+          <ul class="nav-dropdown">
+            <li>
+              <a href="rolede.html">Rôle délégué</a>
+            </li>
+            <li>
+              <a href="rediger.html">Rediger TPG</a>
+            </li>
+            <li>
+              <a href="projet-resolution.html">Projet de resolution</a>
+            </li>
+            <li>
+              <a href="debats.html">Debats functionement</a>
+            </li>
+
+          </ul>
+        </li>
+        <li>
+          <a href="#!">Équipe</a>
+
+        </li>
+
+      </ul>
+    </nav>
+  </div>
+</section>
+<body>
+  <div class="container">
+    <h3><p><h1>Le MUNUCCLE</h1></p><p><h2>Pourquoi un nouveau MUN proposée par la plus ancienne école européenne ?</h2></p><p>Les modélisations des grandes institutions internationales sont déjà une vieille tradition au sein du réseau des écoles européennes. Le Model European Community Project (MECP)qui réunit leModel European Council (MEC) et le Model European Parliament (MEP), créé dès 1984, est une simulation non pas des Nations Unies mais du Conseil européen (qui réunit les chefs d’État et degouvernement de l’Union européenne), du Conseil de l’UE (qui réunit les ministres des gouvernements de l’UE), mais aussi du Parlement européen. Les débats ont théoriquement lieu dans les trois langues de travail de l’UE, l’anglais, le français et l’allemand, et chaque année une école européenne différente accueille l’événement.</p><p>Les écoles européennes se sont ensuite lancées dans les modélisations des Nations Unies, d’abord avec le Model United Nations of Munich (MUNoM), créé dès 2004, qui se tient tous lesans à l’École européenne de Munich, plus récemment avec le Brussels Model United Nations (BRUMUN), créé cette année (2018) à l’École européenne de Bruxelles 2. Ces deux MUN se déroulent entièrement en langue anglaise.</p><p>Alors pourquoi créer encore un nouveau MUN au sein d’une école européenne ? D’abord parce que la langue principale du MUNUCCLE est le français, que les institutions européennes se doivent d’être le reflet d’une Europe par nature multiculturelle, et que l’anglais ne peut donc être la seule langue dans laquelle se déroule ce type d’événement, synonyme d’ouverture à l’autre et de multiplication des échanges. Si les MUN sont à l’origine une invention typiquement anglo-saxonne qui met en valeur l’esprit d’initiative, la prise de parole et l’apprentissage de l’autonomie individuelle et collective, et que l’anglais reste la langue de communication de la très grande majorité de ces modélisations de par le monde, certaines choisissent d’autres langues, parfois même le plurilinguisme. L’ambition du MUNUCCLE est ainsi de s’insérer dans ce réseau des modélisations francophones, comme le FERMUN à Genève, le MFGNU à Grenoble, le MFINUE à Istanbul, le MFNU à La Haye ou le NUMAD à Madrid. C’est aussi de s’ouvrir, au-delà des écoles européennes, à des écoles de Belgique, de France ou d’autres pays francophones.</p><p>MECP :<a href="https://en.wikipedia.org/wiki/Model_European_Communities_Project">https://en.wikipedia.org/wiki/Model_European_Communities_Project</a> </p> <p>MunOM: <a href="http://munom.eu">http://munom.eu</a> </p> <p> BRUMUN : <a href="http://www.brumun.eu">http://www.brumun.eu</a> </p></h3>
+
+
+
+  </div>
+</body>
+<script>
+  (function($) { // Begin jQuery
+  $(function() { // DOM ready
+    // If a link has a dropdown, add sub menu toggle.
+    $('nav ul li a:not(:only-child)').click(function(e) {
+      $(this).siblings('.nav-dropdown').toggle();
+      // Close one dropdown when selecting another
+      $('.nav-dropdown').not($(this).siblings()).hide();
+      e.stopPropagation();
+    });
+    // Clicking away from dropdown will remove the dropdown class
+    $('html').click(function() {
+      $('.nav-dropdown').hide();
+    });
+    // Toggle open and close nav styles on click
+    $('#nav-toggle').click(function() {
+      $('nav ul').slideToggle();
+    });
+    // Hamburger to X toggle
+    $('#nav-toggle').on('click', function() {
+      this.classList.toggle('active');
+    });
+  }); // end DOM ready
+})(jQuery); // end jQuery
+</script>
+
+</html>
+

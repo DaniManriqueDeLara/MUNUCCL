@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>MUNUCCLE</title>
+  <link rel="stylesheet" href="css/numad.css">
+  <script src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
+
+</head>
+<div class="foto-encima">
+  <img src="/assets/Mun-foto.jpg" alt="Logo mun" style="max-height: 122px;
+  width: 100%;
+  margin-bottom: -4px;
+}">
+
+</div>
+<section class="navigation">
+  <div class="nav-container">
+    <!-- <div class="brand" style="height: 70px;
+    width: 70px;">
+      <img src="/assets/logo-mun-0e600c6509cd8bf45c726f75f32eedfcda1b9a7a273d5c4089fab58240abe5c7.jpg" alt="Logo mun" style="
+    height: 70px;
+    width: 70px;
+">
+      <a href="#!">MUNUCCLE</a>
+
+    </div> -->
+    <div class="brand" style="text-decoration: none;">
+      <a href="numad.html">MUNUCCLE</a>
+    </div>
+    <nav>
+      <div class="nav-mobile"><a id="nav-toggle" href="#!"><span></span></a></div>
+      <ul class="nav-list">
+        <li>
+          <a href="#!">Munuccle 2018</a>
+          <ul class="nav-dropdown">
+            <li>
+              <a href="home3.html">Un MUN?</a>
+            </li>
+            <li>
+              <a href="pourquoi.html">Pourquoi munuccle?</a>
+            </li>
+            <li>
+              <a href="but.html">But du jeu</a>
+            </li>
+            <li>
+              <a href="#!">Agenda</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href="#!">Comités</a>
+          <ul class="nav-dropdown">
+            <li>
+              <a href="home2.html">Themes et rapports</a>
+            </li>
+            <li>
+              <a href="#!">Délégations</a>
+            </li>
+            <li>
+              <a href="#!">TPG</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href="#!">Se préparer</a>
+          <ul class="nav-dropdown">
+            <li>
+              <a href="rolede.html">Rôle délégué</a>
+            </li>
+            <li>
+              <a href="rediger.html">Rediger TPG</a>
+            </li>
+            <li>
+              <a href="projet-resolution.html">Projet de resolution</a>
+            </li>
+            <li>
+              <a href="debats.html">Debats functionement</a>
+            </li>
+
+          </ul>
+        </li>
+        <li>
+          <a href="#!">Équipe</a>
+
+        </li>
+
+      </ul>
+    </nav>
+  </div>
+</section>
+<body>
+  <div class="container">
+    <h1>Rédiger un texte de politique générale (TPG)</h1>
+    <h3><p>Ce document de préparation est un texte qui présente clairement la stratégie du délégué d’un pays sur les questions abordées par sa commission. Il doit permettre au délégué de présenter, à la demande des présidents de commission, la position de son pays. De plus, ce texte sert de guide pour aider le délégué à maintenir une ligne directrice dans ses activités et décider de sa position lors des votes.</p>
+      <p>Le texte de politique générale est undocument obligatoire pour chaque question sur laquelle le délégué ne soumet pas de proposition de résolution.</p> <p>Voici quelques règles qui permettront de composer un TPG :</p></h3>
+      <div class="list" style="list-style-type: none;">
+        <h3><li> 1.Le TPG doit faire au minimum une page et au maximum deux pages de longueur à simple interligne, police “Times New Roman”10 points.</li>
+        <li> 2.Il doit être correctement identifié. Dans le coin gauche, en haut, figurent le nom du pays représenté et la commission dans laquelle cette question est discutée.</li>
+        <li> 3.La question traitée est soulignée.</li>
+        <li> 4.Le corps du texte devrait contenir les éléments suivants : -Une phrase générale sur la position du pays. -Un développement sur cette position. (On peut y citer un traité international, les accords que le pays a soutenus dans le passé ou tout autre document international utile). -Des références aux expériences passées du pays ou de l’ONU. -Une conclusion qui mentionne encore une fois la position du pays sur le sujet.</li>
+        <li> 5.Il n’est pas nécessaire d’avoir une conclusion globale.</li>
+        <li> 6.On ne doit en aucun cas utiliser la première personne dans le document mais plutôt utiliser des expressions telles que « le Japon » ou « notre pays » puisque le document de préparation se veut une déclaration du pays et non le reflet de l’opinion du délégué.</li>
+      </div>
+      <p><a href="examples-tpg.html">Quelques exemples de TPG</a></p></h3>
+
+
+
+    </div>
+  </body>
+  <script>
+  (function($) { // Begin jQuery
+  $(function() { // DOM ready
+    // If a link has a dropdown, add sub menu toggle.
+    $('nav ul li a:not(:only-child)').click(function(e) {
+      $(this).siblings('.nav-dropdown').toggle();
+      // Close one dropdown when selecting another
+      $('.nav-dropdown').not($(this).siblings()).hide();
+      e.stopPropagation();
+    });
+    // Clicking away from dropdown will remove the dropdown class
+    $('html').click(function() {
+      $('.nav-dropdown').hide();
+    });
+    // Toggle open and close nav styles on click
+    $('#nav-toggle').click(function() {
+      $('nav ul').slideToggle();
+    });
+    // Hamburger to X toggle
+    $('#nav-toggle').on('click', function() {
+      this.classList.toggle('active');
+    });
+  }); // end DOM ready
+})(jQuery); // end jQuery
+</script>
+
+</html>

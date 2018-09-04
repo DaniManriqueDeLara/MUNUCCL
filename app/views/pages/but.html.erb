@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/numad.css">
+  <script src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
+
+</head>
+<div class="foto-encima">
+  <img src="/assets/Mun-foto.jpg" alt="Logo mun" style="max-height: 122px;
+  width: 100%;
+  margin-bottom: -4px;
+}">
+
+</div>
+<section class="navigation">
+  <div class="nav-container">
+    <!-- <div class="brand" style="height: 70px;
+    width: 70px;">
+      <img src="/assets/logo-mun-0e600c6509cd8bf45c726f75f32eedfcda1b9a7a273d5c4089fab58240abe5c7.jpg" alt="Logo mun" style="
+    height: 70px;
+    width: 70px;
+">
+      <a href="#!">MUNUCCLE</a>
+
+    </div> -->
+    <div class="brand" style="text-decoration: none;">
+      <a href="numad.html">MUNUCCLE</a>
+    </div>
+    <nav>
+      <div class="nav-mobile"><a id="nav-toggle" href="#!"><span></span></a></div>
+      <ul class="nav-list">
+        <li>
+          <a href="#!">Munuccle 2018</a>
+          <ul class="nav-dropdown">
+            <li>
+              <a href="home3.html">Un MUN?</a>
+            </li>
+            <li>
+              <a href="pourquoi.html">Pourquoi munuccle?</a>
+            </li>
+            <li>
+              <a href="but.html">But du jeu</a>
+            </li>
+            <li>
+              <a href="#!">Agenda</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href="#!">Comités</a>
+          <ul class="nav-dropdown">
+            <li>
+              <a href="home2.html">Themes et rapports</a>
+            </li>
+            <li>
+              <a href="#!">Délégations</a>
+            </li>
+            <li>
+              <a href="#!">TPG</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href="#!">Se préparer</a>
+          <ul class="nav-dropdown">
+            <li>
+              <a href="rolede.html">Rôle délégué</a>
+            </li>
+            <li>
+              <a href="rediger.html">Rediger TPG</a>
+            </li>
+            <li>
+              <a href="projet-resolution.html">Projet de resolution</a>
+            </li>
+            <li>
+              <a href="debats.html">Debats functionement</a>
+            </li>
+
+          </ul>
+        </li>
+        <li>
+          <a href="#!">Équipe</a>
+
+        </li>
+
+      </ul>
+    </nav>
+  </div>
+</section>
+<body>
+  <div class="container">
+    <p><h1>Le but du jeu</h1><h3><p><h2>Finalement, tout ça pour quoi ?</h2></p><p>On peut en effet se demander à quoi peut bien servir de participer à un jeu, une simulation qui n’a aucun effet sur le réel. Doit-on vraiment se fatiguer à rédiger laborieusement de longues et complexes résolutions qui auront très peu d’échos et ne serviront à rien de concret ?</p><p>On pourrait tout d’abord répondre qu’on n’est pas toujours très sûr de l’efficience des réunions et des résolutions prises au sein même de l’ONU. Et pourtant ce sont ces efforts qui garantissent l’existence d’une communauté internationale et l’émergence progressive d’un droit international dans le cadre de négociations multilatérales. Participer à ces simulations, c’est montrer qu’on croit à cemultilatéralisme aujourd’hui tant attaqué par des forces politiques nouvelles, et qu’à plus long terme on se prépare à le faire vivre.</p><p>Car la principale vertu de ces simulations est bien sûr pédagogique. Si les élèves qui reviennent de ces modélisations sont presque toujours enthousiastes, et qu’ils/elles en redemandent, c’est parce qu’ils/elles ont conscience de participer à un exercice très formateur qui leur permet d’apprendre autrement que dans un cadre classiquement scolaire, mais aussi de vivre une expérience globale où ils/elles construisent collectivement un projet dont ils/elles ont très largement la maîtrise.</p><p>Être un.e délégué.e, c’est se donner les moyens d’habiter un personnage, jouer un rôle réaliste, et pour y parvenir acquérir des connaissances qui aient un sens et contribuent à élaborer une vision du monde ; c’est aussi maîtriser ses dossiers et utiliser des compétences extrêmement variées et complémentaires, depuis l’écriture de rapports jusqu’à la prise de parole en public, en passant par la capacité de suivre des règles communes plus ou moins formelles, mais surtout d’écouter, de convaincre, de polémiquer, de tolérer, de négocier, de construire un consensus dont sortiront des textes élaborés en commun ; c’est enfin rencontrer d’autres jeunes venus d’horizons très différents mais avec un même objectif, partager des expériences avec des inconnu.e.s, s’ouvrir à d’autres cultures, points de vue, personnalités, accents... dans le cadre de la modélisation, mais aussi en dehors.</p><p>Une fois cette expérience vécue, le/la délégué.e est prêt.e à recommencer, à participer à de nouvelles modélisations, ou, mieux encore, à rejoindre l’état-major d’un futur MUN dont il/elle sera l’une des chevilles ouvrières, le concepteur, le/la responsable. Il n’est donc pas étonnant que les universités valorisent les candidatures de ceux/celles qui ont su montrer une telle volonté d’émancipation...</p></h3>
+
+
+
+  </div>
+</body>
+<script>
+  (function($) { // Begin jQuery
+  $(function() { // DOM ready
+    // If a link has a dropdown, add sub menu toggle.
+    $('nav ul li a:not(:only-child)').click(function(e) {
+      $(this).siblings('.nav-dropdown').toggle();
+      // Close one dropdown when selecting another
+      $('.nav-dropdown').not($(this).siblings()).hide();
+      e.stopPropagation();
+    });
+    // Clicking away from dropdown will remove the dropdown class
+    $('html').click(function() {
+      $('.nav-dropdown').hide();
+    });
+    // Toggle open and close nav styles on click
+    $('#nav-toggle').click(function() {
+      $('nav ul').slideToggle();
+    });
+    // Hamburger to X toggle
+    $('#nav-toggle').on('click', function() {
+      this.classList.toggle('active');
+    });
+  }); // end DOM ready
+})(jQuery); // end jQuery
+</script>
+
+</html>
+

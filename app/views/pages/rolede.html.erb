@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/numad.css">
+  <script src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
+
+</head>
+<div class="foto-encima">
+  <img src="/assets/Mun-foto.jpg" alt="Logo mun" style="max-height: 122px;
+  width: 100%;
+  margin-bottom: -4px;
+}">
+
+</div>
+<section class="navigation">
+  <div class="nav-container">
+    <!-- <div class="brand" style="height: 70px;
+    width: 70px;">
+      <img src="/assets/logo-mun-0e600c6509cd8bf45c726f75f32eedfcda1b9a7a273d5c4089fab58240abe5c7.jpg" alt="Logo mun" style="
+    height: 70px;
+    width: 70px;
+">
+      <a href="#!">MUNUCCLE</a>
+
+    </div> -->
+    <div class="brand" style="text-decoration: none;">
+      <a href="numad.html">MUNUCCLE</a>
+    </div>
+    <nav>
+      <div class="nav-mobile"><a id="nav-toggle" href="#!"><span></span></a></div>
+      <ul class="nav-list">
+        <li>
+          <a href="#!">Munuccle 2018</a>
+          <ul class="nav-dropdown">
+            <li>
+              <a href="home3.html">Un MUN?</a>
+            </li>
+            <li>
+              <a href="pourquoi.html">Pourquoi munuccle?</a>
+            </li>
+            <li>
+              <a href="but.html">But du jeu</a>
+            </li>
+            <li>
+              <a href="#!">Agenda</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href="#!">Comités</a>
+          <ul class="nav-dropdown">
+            <li>
+              <a href="home2.html">Themes et rapports</a>
+            </li>
+            <li>
+              <a href="#!">Délégations</a>
+            </li>
+            <li>
+              <a href="#!">TPG</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href="#!">Se préparer</a>
+          <ul class="nav-dropdown">
+            <li>
+              <a href="rolede.html">Rôle délégué</a>
+            </li>
+            <li>
+              <a href="rediger.html">Rediger TPG</a>
+            </li>
+            <li>
+              <a href="projet-resolution.html">Projet de resolution</a>
+            </li>
+            <li>
+              <a href="debats.html">Debats functionement</a>
+            </li>
+
+          </ul>
+        </li>
+        <li>
+          <a href="#!">Équipe</a>
+
+        </li>
+
+      </ul>
+    </nav>
+  </div>
+</section>
+<body>
+  <div class="container">
+    <p><h1>Le/la délégué.e</h1></p>
+      <p><h2>Quel est son rôle ?</h2></p>
+      <h3><p>Le/la délégué.e qui, dans le cadre d’un MUN, représente son pays au sein d’une délégation, doitse préparer en amont afin de jouer SON rôle le mieux possible lors des débats, et pour cela doit pouvoi</p><p>1. S’identifier à son pays,donc en connaître les principales caractéristiques sur les plans politique, économique, social, culturel, savoir quels sont les contentieux historiques et les relations géopolitiques avec les autres pays proches et lointains, identifier les principaux enjeux et intérêts prioritaires à défendre par son pays, suivre l’actualité qui touche à son pays au moins pour l’année écoulée, et connaître les prises de position de son pays au sein des institutions internationales ;</p><p>Voir le site du ministère des affaires étrangères français : <a href="https://www.diplomatie.gouv.fr/fr/dossiers-pays/">https://www.diplomatie.gouv.fr/fr/dossiers-pays/</a>  (sélectionner son pays dans le menu déroulant, puis naviguer dans le menu à droite)</p><p>2. Devenir un expert sur le sujet débattu au sein de sa commission, donc lire le rapport des présidents publié sur le site du MUNUCCLE, et compléter ces informations à l’aide de sources diverses (presse et autres médias, articles universitaires, rapports diplomatiques...);</p><p>3. Défendre la position de son pays sur le sujet débattu, donc croiser les données lors de ses recherches (son pays / le thème débattu) afin de ne pas commettre d’erreur en prenant des positions qui ne correspondraient pas aux intérêts et à l’identité de son pays.</p><p>Pour aider le/la délégué.e à bien se préparer, il lui sera demandé de rédiger et d’envoyer à ses présidents un Texte depolitique générale (TPG) une dizaine de jours environ avant la session du MUNUCCLE. Dans ce texte, le/la délégué.e devra présenter clairement la stratégie de son pays par rapport au(x) thème(s) abordé(s) dans sa commission et faire apparaître les objectifs qu’il/elle s’est fixé.e.</p>
+        <p>Voir <a href="http://www.numad.eu/wp-content/uploads/2017/12/Aide-à-la-rédaction-du-texte-de-politique-générale-TPG.pdf">http://www.numad.eu/wp-content/uploads/2017/12/Aide-à-la-rédaction-du-texte-de-politique-générale-TPG.pdf</a></p>Lors du MUNUCCLE, le/la délégué.e ne devra pas oublier qu’il/elle représente son pays et qu’il/elle doit en tout temps faire bonne figure en respectant un code vestimentaire stricte et des règles de bienséan </h3>
+
+
+
+      </div>
+    </body>
+    <script>
+  (function($) { // Begin jQuery
+  $(function() { // DOM ready
+    // If a link has a dropdown, add sub menu toggle.
+    $('nav ul li a:not(:only-child)').click(function(e) {
+      $(this).siblings('.nav-dropdown').toggle();
+      // Close one dropdown when selecting another
+      $('.nav-dropdown').not($(this).siblings()).hide();
+      e.stopPropagation();
+    });
+    // Clicking away from dropdown will remove the dropdown class
+    $('html').click(function() {
+      $('.nav-dropdown').hide();
+    });
+    // Toggle open and close nav styles on click
+    $('#nav-toggle').click(function() {
+      $('nav ul').slideToggle();
+    });
+    // Hamburger to X toggle
+    $('#nav-toggle').on('click', function() {
+      this.classList.toggle('active');
+    });
+  }); // end DOM ready
+})(jQuery); // end jQuery
+</script>
+
+</html>
